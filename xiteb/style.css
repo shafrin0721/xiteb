@@ -1,0 +1,1137 @@
+body {
+    font-family: Arial, sans-serif; /* Global font */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Background color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-quote {
+    background-color: #ffcc00; /* Yellow for Get a Quote */
+    color: #333;
+    border-radius: 5px;
+}
+
+.btn-signin {
+    background-color: #333; /* Dark for Sign In */
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-quote:hover, .btn-signin:hover {
+    opacity: 0.8;
+}
+
+#hero {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+.hero-text {
+    position: absolute; /* Position text over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    color: white; /* Change text color for visibility */
+    text-align: center; /* Center text */
+    z-index: 2; /* Ensure text is above the images */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.hero-text h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 36px; /* Increase font size */
+}
+
+.hero-text h1 {
+    margin: 10px 0; /* Add margin for spacing */
+    font-size: 48px; /* Increase font size */
+}
+
+.hero-text p {
+    margin: 10px 0; /* Add margin for spacing */
+    font-size: 20px; /* Increase font size */
+    color: #fff;
+}
+
+.btn-discover {
+    background-color: #ffcc00; /* Yellow for Discover More */
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: fit-content; /* Adjust button width */
+}
+
+.btn-discover:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+}
+
+.hero-image {
+    flex: 1; /* Take up half of the screen */
+    display: flex;
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+}
+
+.hero-image img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#services {
+    padding: 40px; /* Padding around the section */
+    text-align: center; /* Center text */
+}
+
+.subtitle {
+    font-size: 18px; /* Subtitle font size */
+    color: #ff6f20; /* Subtitle color */
+    margin-bottom: 10px; /* Space below the subtitle */
+}
+
+.main-title {
+    font-size: 36px; /* Main title font size */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.services-section {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between cards */
+}
+
+.service-card {
+    width: 48%; /* Adjust width to fit two cards */
+    margin: 1%; /* Space between cards */
+    background-color: white; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: center; /* Center text */
+}
+
+.service-image {
+    width: 100%; /* Responsive image */
+    border-radius: 10px 10px 0 0; /* Rounded corners for the top */
+}
+
+.service-content {
+    margin-top: 10px; /* Space above the content */
+    
+}
+
+.service-button {
+    
+    color: #000; /* Text color */
+    padding: 20px 30px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 10px; /* Space above the button */
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin-left: 50px; /* Left margin */
+    font-size: 14px; /* Smaller font size */
+    width: auto;
+}
+
+.service-button:hover {
+    background-color: #024B5A; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    color: #f0f0f0; /* Change text color on hover */
+
+}
+
+.arrow {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    color: #000; 
+    margin-left: 10px; /* Left margin */
+}
+.arrow:hover {
+    margin-left: 5px; /* Space between text and arrow */
+    font-size: 18px; /* Adjust arrow size */
+    color: #f0f0f0;
+}
+
+.newsletter {
+    display: flex; /* Flexbox layout for newsletter */
+    max-width: 500px; /* Max width for newsletter */
+    width: 100%; /* Full width */
+    margin: 0 auto; /* Center the newsletter section */
+}
+
+.newsletter input {
+    flex: 0.6; /* Adjusted to take less space */
+    padding: 15px; /* Consistent padding inside input */
+    border: none; /* No border */
+    border-radius: 10px 0 0 10px; /* Rounded corners on the left */
+    font-size: 16px; /* Increased font size for better readability */
+    background-color: #ffffff; /* White background for input */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.newsletter button {
+    padding: 15px 30px; /* Adjust padding for button */
+    background-color: #ffb03b; /* Button color */
+    border: none; /* No border */
+    border-radius: 10px; /* All corners rounded */
+    color: #fff; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Match font size with input */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.content-wrapper {
+    max-width: 600px;
+    text-align: center;
+}
+
+.content-wrapper h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+}
+
+.content-wrapper p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666; /* Gray text color */
+}
+
+.btn-discover {
+    background-color: #ffcc00; /* Yellow for Discover More */
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-discover:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+}
+
+.carousel-images {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Ensure the carousel takes full width */
+    height: 100vh; /* Set height to 100% of the viewport */
+}
+
+.carousel-item {
+    display: none; /* Hide all items by default */
+    width: 100%; /* Ensure each item takes full width */
+    height: 100%; /* Ensure each item takes full height */
+    background-size: cover; /* Cover the entire area */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the background image */
+}
+
+.carousel-item.active {
+    display: block; /* Show the active item */
+}
+
+.overlay {
+    position: absolute; /* Position overlay over the image */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1; /* Ensure overlay is above the image */
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px; /* Adjust font size for arrows */
+    border-radius: 50%; /* Make buttons circular */
+    width: 40px; /* Set width for buttons */
+    height: 40px; /* Set height for buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3; /* Ensure buttons are above the images */
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Change background on hover */
+}
+
+.container {
+    padding: 40px; /* Padding around the container */
+}
+
+.main-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between sections */
+    align-items: center; /* Center items vertically */
+}
+
+.left-section {
+    flex: 1; /* Take up available space */
+    padding-right: 20px; /* Space between sections */
+}
+
+.left-section h2 {
+    font-size: 36px; /* Title font size */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.left-section h3 {
+    font-size: 24px; /* Subtitle font size */
+    color: #F97E46; /* Subtitle color */
+    margin: 10px 0; /* Margin above and below */
+}
+
+.left-section p {
+    font-size: 16px; /* Paragraph font size */
+    margin: 10px 0; /* Margin above and below */
+}
+
+.welcome-button-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-top: 20px; /* Space above the button */
+}
+
+.button {
+    background-color: #f0f0f0; /* Button color */
+    color: #024B5A; /* Text color */
+    padding: 10px 30px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 5px; /* Space above the button */
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin-left: 50px; /* Left margin */
+    font-size: 18px; /* Smaller font size */
+    width: auto;
+}
+
+.button:hover {
+    background-color: #024B5A; /* Darker shade on hover */
+    color: white; /* Change text color on hover */
+}
+
+.right-section {
+    flex: 1; /* Take up available space */
+    text-align: center; /* Center text */
+}
+
+.client-count {
+    background-color: #ff6f20; /* Background color */
+    color: white; /* Text color */
+    padding: 25px 40px; /* Padding */
+    border-radius: 0; /* No rounded corners */
+    display: inline-block; /* Fit content */
+    text-align: left; /* Align text to the left */
+    position: absolute; /* Allows exact placement */
+    top: 160%; /* Center vertically */
+    right: 550px; /* Distance from right edge */
+    transform: translateY(-50%); /* Center vertically */
+    font-family: sans-serif; /* Font family */
+    font-weight: 500; /* Font weight */
+    font-size: 16px; /* Font size */
+    z-index: 2; /* Layering */
+}
+
+.client-count::after {
+    content: ''; /* Triangle */
+    position: absolute; /* Positioning */
+    top: 50%; /* Center vertically */
+    right: -20px; /* Right-aligned triangle */
+    transform: translateY(-50%); /* Center vertically */
+    width: 0; /* No width */
+    height: 0; /* No height */
+    border-top: 20px solid transparent; /* Triangle top */
+    border-bottom: 20px solid transparent; /* Triangle bottom */
+    border-left: 20px solid #ff6f20; /* Triangle left */
+}
+
+.client-number {
+    font-size: 30px; /* Font size for number */
+    font-weight: bold; /* Bold text */
+    display: block; /* Block display */
+}
+
+.client-text {
+    font-size: 16px; /* Font size for text */
+    margin: 0; /* No margin */
+}
+
+.welcome-image {
+    width: 100%; /* Make image responsive */
+    max-width: 300px; /* Max width for the image */
+    border-radius: 10px; /* Rounded corners for images */
+    
+}
+
+.second-image {
+    max-width: 100%; /* Ensure the second image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Space between images */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center items */
+    }
+
+    .left-section, .right-section {
+        min-width: 100%; /* Full width on small screens */
+    }
+
+    .client-count {
+        position: static; /* Remove absolute positioning */
+        margin-top: 20px; /* Add margin for spacing */
+    }
+}
+
+.welcome.container {
+    padding: 40px; /* Padding around the container */
+}
+
+.welcome-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between sections */
+    align-items: center; /* Center items vertically */
+}
+
+.left-section {
+    flex: 1; /* Take up available space */
+    padding-right: 20px; /* Space between sections */
+}
+
+.left-section h2 {
+    font-size: 36px; /* Title font size */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.left-section h3 {
+    font-size: 24px; /* Subtitle font size */
+    color: #ff6f20; /* Subtitle color */
+    margin: 10px 0; /* Margin above and below */
+}
+
+.left-section p {
+    font-size: 16px; /* Paragraph font size */
+    margin: 10px 0; /* Margin above and below */
+}
+
+.button {
+    background-color: #f0f0f0; /* Button color */
+    color: #024B5A; /* Text color */
+    padding: 10px 30px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 5px; /* Space above the button */
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin-left: 50px; /* Left margin */
+    font-size: 14px; /* Smaller font size */
+    width: auto;
+}
+
+.button:hover {
+    background-color: #024B5A; /* Darker shade on hover */
+    color: white; /* Change text color on hover */
+}
+
+.right-section {
+    flex: 1; /* Take up available space */
+    text-align: center; /* Center text */
+}
+
+.client-count {
+    margin-bottom: 20px; /* Space below the client count */
+    font-size: 20px; /* Font size for client count */
+}
+
+.client-number {
+    font-weight: bold; /* Bold text for the number */
+}
+
+.welcome-image {
+    width: 100%; /* Make image responsive */
+    max-width: 300px; /* Max width for the image */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.indicators {
+    text-align: center; /* Center the indicators */
+    margin-top: 20px; /* Space above the indicators */
+}
+
+.dot {
+    height: 12px; /* Height of the dot */
+    width: 12px; /* Width of the dot */
+    margin: 0 5px; /* Space between dots */
+    background-color: #bbb; /* Default color */
+    border-radius: 50%; /* Make it circular */
+    display: inline-block; /* Align dots in a row */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.dot.active {
+    background-color: #024B5A; /* Active dot color */
+}
+
+.slideshow-container {
+    position: relative; /* Positioning for absolute elements */
+    max-width: 100%; /* Full width */
+    margin: auto; /* Center the slideshow */
+}
+
+.mySlides {
+    display: none; /* Hide all slides by default */
+}
+
+.indicators {
+    text-align: center; /* Center the indicators */
+    margin-top: 20px; /* Space above the indicators */
+}
+
+.dot {
+    height: 12px; /* Height of the dot */
+    width: 12px; /* Width of the dot */
+    margin: 0 5px; /* Space between dots */
+    background-color: #bbb; /* Default color */
+    border-radius: 50%; /* Make it circular */
+    display: inline-block; /* Align dots in a row */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.dot.active {
+    background-color: #024B5A; /* Active dot color */
+}
+
+.service-card {
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Space above the description */
+    color: #024B5A; /* Text color */
+}
+
+.service-card  h3 {
+    font-size: 24px; /* Title font size */
+    margin: 10px 0; /* Space above and below */
+}
+
+.service-card p {
+    font-size: 16px; /* Paragraph font size */
+}
+
+#testimonials {
+    padding: 40px; /* Padding around the section */
+    background-color: #f9f9f9; /* Background color */
+    margin: 20px 0; /* Space between sections */
+    text-align: center; /* Center text */
+    position: relative; /* Position for absolute elements */
+}
+
+h2 {
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.testimonial-container {
+    position: relative; /* Position for absolute elements */
+    max-width: 800px; /* Max width for the testimonials */
+    margin: 0 auto; /* Center the container */
+}
+
+.testimonial {
+    display: none; /* Hide all testimonials by default */
+    background-color: white; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 20px; /* Padding inside the card */
+    transition: opacity 0.5s ease; /* Animation for opacity */
+}
+
+.testimonial.active {
+    display: block; /* Show the active testimonial */
+    opacity: 1; /* Fully visible */
+}
+
+blockquote {
+    font-style: italic; /* Italicize the quote */
+    margin: 0; /* Remove margin */
+}
+
+cite {
+    display: block; /* Block display for citation */
+    margin-top: 10px; /* Space above the citation */
+    text-align: right; /* Align text to the right */
+}
+
+.testimonial-controls {
+    text-align: center; /* Center the controls */
+    margin-top: 20px; /* Space above controls */
+}
+
+.testimonial-controls button {
+    background-color: #024B5A; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 0 5px; /* Space between buttons */
+    position: absolute; /* Position arrows */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+.prev {
+    left: 10px; /* Position left arrow */
+}
+
+.next {
+    right: 10px; /* Position right arrow */
+}
+
+.testimonial-controls button:hover {
+    background-color: #023B4A; /* Darker shade on hover */
+}
+
+#trusted-clients, #why-choose-us {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between sections */
+    align-items: flex-start; /* Align items at the start */
+    padding: 40px; /* Padding around the sections */
+    background-color: #f9f9f9; /* Background color */
+    margin: 20px 0; /* Space between sections */
+}
+
+h2 {
+    width: 100%; /* Full width for the title */
+    text-align: center; /* Center the section title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.client-testimonial {
+    flex: 1; /* Take up available space */
+    margin-right: 20px; /* Space between testimonial and reasons */
+}
+
+.testimonial-content {
+    background-color: white; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 20px; /* Padding inside the card */
+}
+
+blockquote {
+    font-style: italic; /* Italicize the quote */
+    margin: 0; /* Remove margin */
+}
+
+cite {
+    display: block; /* Block display for citation */
+    margin-top: 10px; /* Space above the citation */
+    text-align: right; /* Align text to the right */
+}
+
+.why-choose-list {
+    flex: 1; /* Take up available space */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.why-choose-list li {
+    background-color: white; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    margin: 10px 0; /* Space between list items */
+    padding: 20px; /* Padding inside the card */
+    position: relative; /* Position for the toggle button */
+}
+
+.toggle {
+    background: none; /* No background */
+    border: none; /* No border */
+    font-size: 20px; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: absolute; /* Position the toggle button */
+    right: 20px; /* Align to the right */
+    top: 50%; /* Align to the vertical center */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    color: #024B5A; /* Color for the toggle button */
+}
+
+.details {
+    display: none; /* Hide details by default */
+    margin-top: 10px; /* Space above details */
+}
+
+#why-choose-us {
+    padding: 40px; /* Padding around the section */
+    background-color: #f9f9f9; /* Background color */
+    margin: 20px 0; /* Space between sections */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+h2 {
+    text-align: center; /* Center the section title */
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 24px; /* Font size for the title */
+    color: #024B5A; /* Title color */
+}
+
+p {
+    text-align: center; /* Center the introductory paragraph */
+    margin-bottom: 30px; /* Space below the paragraph */
+    font-size: 16px; /* Font size for the paragraph */
+    color: #555; /* Paragraph color */
+}
+
+.why-choose-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    width: 100%; /* Full width for the list */
+    max-width: 600px; /* Max width for the list */
+}
+
+.why-choose-list li {
+    background-color: white; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    margin: 10px 0; /* Space between list items */
+    padding: 20px; /* Padding inside the card */
+    position: relative; /* Position for the toggle button */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.why-choose-list li:hover {
+    background-color: #f1f1f1; /* Change background on hover */
+}
+
+h3 {
+    margin: 0; /* Remove margin */
+    font-size: 18px; /* Font size for the heading */
+    color: #024B5A; /* Heading color */
+}
+
+.toggle {
+    background: none; /* No background */
+    border: none; /* No border */
+    font-size: 20px; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: absolute; /* Position the toggle button */
+    right: 20px; /* Align to the right */
+    top: 50%; /* Align to the vertical center */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    color: #024B5A; /* Color for the toggle button */
+}
+
+.details {
+    display: none; /* Hide details by default */
+    margin-top: 10px; /* Space above details */
+    font-size: 14px; /* Font size for details */
+    color: #333; /* Color for details */
+}
+
+#clients {
+    padding: 40px; /* Padding around the section */
+    background-color: #f9f9f9; /* Background color */
+    text-align: center; /* Center text */
+}
+
+h2 {
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 24px; /* Font size for the title */
+    color: #024B5A; /* Title color */
+}
+
+.client-logos {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center logos */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.client-logo {
+    margin: 10px; /* Space between logos */
+    display: flex; /* Flexbox for logo and text */
+    flex-direction: column; /* Stack logo and text vertically */
+    align-items: center; /* Center items */
+}
+
+.client-logo img {
+    max-width: 100px; /* Max width for logos */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0.7; /* Slightly faded */
+    transition: opacity 0.3s; /* Transition for hover effect */
+}
+
+.client-logo img:hover {
+    opacity: 1; /* Fully visible on hover */
+}
+
+.client-logo span {
+    margin-top: 5px; /* Space above text */
+    font-size: 14px; /* Font size for client name */
+    color: #555; /* Text color */
+}
+
+#latest-news {
+    padding: 40px; /* Padding around the section */
+    background-color: #f9f9f9; /* Background color */
+    text-align: center; /* Center text */
+}
+
+h2 {
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 24px; /* Font size for the title */
+    color: #024B5A; /* Title color */
+}
+
+.news-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+}
+
+.news-item {
+    display: none; /* Hide all news items by default */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Max width for news items */
+    margin: 20px 0; /* Space between items */
+    background-color: white; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.news-item.active {
+    display: block; /* Show the active news item */
+}
+
+.news-item img {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-top-left-radius: 10px; /* Rounded corners */
+    border-top-right-radius: 10px; /* Rounded corners */
+}
+
+.news-content {
+    padding: 15px; /* Padding inside the card */
+    height: 100%; /* Ensure content takes full height */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Space out content */
+    background-color: #fff; /* Background color for better contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.indicators {
+    text-align: center; /* Center the indicators */
+    margin-top: 10px; /* Space above the indicators */
+}
+
+.news-dot {
+    height: 10px; /* Height of the dot */
+    width: 10px; /* Width of the dot */
+    margin: 0 5px; /* Space between dots */
+    background-color: #bbb; /* Default color for inactive dots */
+    border-radius: 50%; /* Make dots circular */
+    display: inline-block; /* Display inline */
+    transition: background-color 0.3s; /* Transition for color change */
+}
+
+.news-dot.active {
+    background-color: #024B5A; /* Color for the active dot */
+}
+footer {
+    background-color: #4a5a74;
+    color: #ffffff;
+    padding: 50px 40px 20px;
+}
+
+.footer-top {
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer-top h3 {
+    font-size: 24px;
+    margin: 0;
+    color: #f0f0f0;
+    
+}
+
+.footer-top p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #d3d3d3;
+}
+.newsletter {
+    display: flex; /* Flexbox layout for newsletter */
+    max-width: 500px; /* Max width for newsletter */
+    width: 100%; /* Full width */
+    margin: 0 auto; /* Center the newsletter section */
+}
+
+.newsletter input {
+    flex: 0.6; /* Adjusted to take less space */
+    padding: 15px; /* Consistent padding inside input */
+    border: none; /* No border */
+    border-radius: 10px ; /* Rounded corners on the left */
+    font-size: 16px; /* Increased font size for better readability */
+    background-color: #ffffff; /* White background for input */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.newsletter button {
+    padding: 25px 80px; /* Adjust padding for button */
+    background-color: #ffb03b; /* Button color */
+    border: none; /* No border */
+    border-radius: 10px; /* All corners rounded */
+    color: #fff; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Match font size with input */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 220px;
+    margin: 20px 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    border-bottom: 2px dotted #ffb03b;
+    padding-bottom: 5px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer-section p,
+.footer-section li {
+    font-size: 13px;
+    color: #d3d3d3;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li::before {
+    content: '\f105';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #ffffff;
+    border-top: 1px solid #66708b;
+    position: relative;
+}
+.footer-bottom  p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #ffffff;
+    position: relative;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons i {
+    color: #ccc;
+    margin: 0 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .newsletter {
+        flex-direction: column; /* Stack input and button */
+        width: 100%; /* Full width */
+    }
+
+    .newsletter input {
+        flex: 1; /* Full width for input */
+        margin-bottom: 10px; /* Space below input */
+    }
+
+    .service-card {
+        width: 100%; /* Full width for cards */
+        margin: 10px 0; /* Space between cards */
+    }
+
+    .main-container {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center items */
+    }
+
+    .left-section, .right-section {
+        min-width: 100%; /* Full width on small screens */
+        padding-right: 0; /* Remove right padding */
+    }
+
+    .client-count {
+        position: static; /* Remove absolute positioning */
+        margin-top: 20px; /* Add margin for spacing */
+    }
+
+    .button {
+        margin-left: 0; /* Remove left margin */
+        width: 100%; /* Full width for buttons */
+    }
+
+    .carousel-controls button {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        width: 30px; /* Smaller button size */
+        height: 30px; /* Smaller button size */
+    }
+
+    .client-logo img {
+        max-width: 80px; /* Smaller logos */
+    }
+
+    .news-item {
+        width: 100%; /* Full width for news items */
+    }
+
+    .why-choose-list {
+        width: 100%; /* Full width for the list */
+    }
+}
+
+/* Additional Media Queries for Smaller Devices */
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 32px; /* Smaller font size for headings */
+    }
+
+    .hero-text h3 {
+        font-size: 24px; /* Smaller font size for subheadings */
+    }
+
+    .service-card h3 {
+        font-size: 20px; /* Smaller font size for service titles */
+    }
+
+    .client-number {
+        font-size: 18px; /* Smaller font size for client count */
+    }
+
+    .client-logo span {
+        font-size: 12px; /* Smaller font size for client names */
+    }
+}

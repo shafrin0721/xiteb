@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <title> Logistics home page </title>
+</head>
+<body>
+    <header>
+        <div class="logo">Cargo Ton</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pages">Pages</a></li>
+                <li><a href="#tracking">Tracking</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a class="btn-quote" href="#quote">Get a Quote</a></li>
+                <li><a class="btn-signin" href="#signin">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="carousel">
+        <div class="carousel-images">
+            <div class="carousel-item active" style="background-image: url('images/Cargo.jpeg');">
+                <div class="overlay"></div>
+            </div>
+            <div class="carousel-item" style="background-image: url('images/cargo place.jpeg');">
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="hero-text">
+            <h3>LOGISTIC</h3>
+            <h1>Best Shipping Partner</h1>
+            <p>Amet, tempus egestas facilisis volutpat viverra molestie lobortis posuere maecenas. 
+            Molestie lobortis posuere maecenas. Eget sapien, gravida nequi.</p>
+            <a class="btn-discover" href="#services">DISCOVER MORE</a>
+        </div>
+    </section>
+
+    <div class="welcome container">
+        <div class="welcome-container">
+            <div class="left-section">
+                <h2>TransMax Logistics</h2>
+                <h3>Around the World</h3>
+                <p>Transmax is the world's driving worldwide coordinations supplier — we uphold industry and exchange the worldwide trade of merchandise through land transport.</p>
+                <p>Our worth added administratons guarantee the progression of products proceeds consistently and supply chains stay lean and streamlined for progress.</p>
+                <div class=" welcome-button-container">
+                    <button class="button">MORE ABOUT US</button>
+                </div>
+            </div>
+        
+            <div class="right-section">
+                <div class="client-count">
+                    <span class="client-number">15,350 +</span>
+                    <p class="client-text">Clients Worldwide</p>
+                </div>
+                <img src="images/welcome page.png" alt="Welcome Image" class="welcome-image" />
+            </div>
+        </div>
+    </div>
+
+    <section id="services">
+        <p class="subtitle">Real Solution ,Real Fast !</p>
+        <h2 class="main-title">Best Global Logistics Solutions.</h2>
+      
+        <section class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="services-section">
+                    <div class="service-card">
+                        <img src="images/service 01.jpeg" alt="Air Freight Services" class="service-image" />
+                        <div class="service-content">
+                            <h3>Air Freight Services</h3>
+                            <p>At our Auto Service garage, we fully appreciate how difficult it is for people to find.</p>
+                            <button class="service-button">
+                                Read More <span class="arrow">→</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="images/service 02.jpeg" alt="Drone Services" class="service-image" />
+                        <div class="service-content">
+                            <h3>Drone Services</h3>
+                            <p>These are unique and often they differ from one industry to the other. Our logistics expertise.</p>
+                            <button class="service-button">
+                                Read More <span class="arrow">→</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="services-section">
+                    <div class="service-card">
+                        <img src="images/service 04.jpeg" alt="Service 4" class="service-image" />
+                        <div class="service-content">
+                            <h3>Warehouse Management</h3>
+                            <p>Our modern storage facilities are equipped with real-time tracking and climate control systems.</p>
+                            <button class="service-button">
+                                Read More <span class="arrow">→</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="images/service 03.jpeg " alt="Service 3" class="service-image" />
+                        <div class="service-content">
+                            <h3>Customs Clearance</h3>
+                            <p>We ensure hassle-free customs procedures, reducing delays and optimizing your supply chain.</p>
+                            <button class="service-button">
+                                Read More <span class="arrow">→</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="indicators">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+    </section>
+      
+    
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>What our clients say about us</p>
+        <div class="testimonial-container">
+            <div class="testimonial active">
+                <blockquote>
+                    <p>"Their logistics service exceeded our expectations. Fast, reliable, and professional!"</p>
+                </blockquote>
+                <cite>
+                    <span>Michael Lee</span>
+                    <span>Supply Chain Manager, NovaTech</span>
+                </cite>
+            </div>
+            <div class="testimonial">
+                <blockquote>
+                    <p>"The team handled our international shipment flawlessly. Highly recommended!"</p>
+                </blockquote>
+                <cite>
+                    <span>Sophia Reynolds</span>
+                    <span>CEO, Global Traders Ltd</span>
+                </cite>
+            </div>
+            <div class="testimonial">
+                <blockquote>
+                    <p>"Thanks to their drone delivery system, we were able to save days in remote area dispatches."</p>
+                </blockquote>
+                <cite>
+                    <span>David Anderson</span>
+                    <span>Logistics Head, AeroLink Inc.</span>
+                </cite>
+            </div>
+        </div>
+        <div class="testimonial-controls">
+            <button class="prev" onclick="moveTestimonial(-1)">&#10094;</button>
+            <button class="next" onclick="moveTestimonial(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <h2>Why Choose Us</h2>
+        <p>We provide exceptional logistics solutions tailored to your needs. Here are some reasons to choose us:</p>
+        <ul class="why-choose-list">
+            <li>
+                <h3>Expertise in Global Logistics</h3>
+                <button class="toggle">+</button>
+                <div class="details">
+                    <p>With over 20 years of experience in the logistics industry, we understand the complexities of global shipping and can navigate them efficiently.</p>
+                </div>
+            </li>
+            <li>
+                <h3>Customized Solutions</h3>
+                <button class="toggle">+</button>
+                <div class="details">
+                    <p>We offer tailored logistics solutions that meet your specific needs, ensuring that your goods are delivered on time and in perfect condition.</p>
+                </div>
+            </li>
+            <li>
+                <h3>Advanced Technology</h3>
+                <button class="toggle">+</button>
+                <div class="details">
+                    <p>Our state-of-the-art tracking systems provide real-time updates on your shipments, giving you peace of mind and transparency throughout the process.</p>
+                </div>
+            </li>
+            <li>
+                <h3>Dedicated Customer Support</h3>
+                <button class="toggle">+</button>
+                <div class="details">
+                    <p>Our customer support team is available 24/7 to assist you with any inquiries or issues, ensuring a smooth logistics experience.</p>
+                </div>
+            </li>
+            <li>
+                <h3>Competitive Pricing</h3>
+                <button class="toggle">+</button>
+                <div class="details">
+                    <p>We offer competitive pricing without compromising on quality, making us the ideal choice for your logistics needs.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="clients">
+        <h2>Our Clients</h2>
+        <div class="client-logos">
+            <div class="client-logo">
+                <img src="images/reuss logo .jpg" alt="Reuss SEO Company">
+                <span>REUSS SEO COMPANY</span>
+            </div>
+            <div class="client-logo">
+                <img src="images/genesis logo .jpg" alt="Genesis">
+                <span>GENESIS</span>
+            </div>
+            <div class="client-logo">
+                <img src="images/intergrio.corp logo .jpg" alt="Integrio Corp">
+                <span>INTEGRIO.CORP</span>
+            </div>
+            <div class="client-logo">
+                <img src="images/brainbriz logo.jpg" alt="Brainbiz">
+                <span>BRAINBIZ</span>
+            </div>
+            <div class="client-logo">
+                <img src="images/zikzag logo.jpg" alt="Zig Zag">
+                <span>ZIG ZAG</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="latest-news">
+        <h2>Latest News</h2>
+        <p>Stay updated with our recent updates</p>
+        <div class="news-slider">
+            <div class="news-container">
+                <div class="news-item active">
+                    <img src="images/news_image_01.jpg" alt="Company Expands Global Logistics Network">
+                    <div class="news-content">
+                        <h3>Company Expands Global Logistics Network</h3>
+                        <p>By Admin | Comments: 15</p>
+                        <p>We are excited to announce the expansion of our logistics hub in Southeast Asia. This milestone...</p>
+                        <span class="news-date">26 May</span>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <img src="images/news_image_02.jpg" alt="New Drone Fleet Deployed">
+                    <div class="news-content">
+                        <h3>New Drone Fleet Deployed</h3>
+                        <p>By Admin | Comments: 12</p>
+                        <p>Our cutting-edge drones are now being used for remote deliveries. Here's how it's changing last-mile delivery...</p>
+                        <span class="news-date">22 May</span>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <img src="images/news_image_03 .jpg" alt="Green Logistics: Our New Initiative">
+                    <div class="news-content">
+                        <h3>Green Logistics: Our New Initiative</h3>
+                        <p>By Admin | Comments: 9</p>
+                        <p>We're reducing emissions by switching to electric vehicles and sustainable packaging across all operations...</p>
+                        <span class="news-date">20 May</span>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <img src="images/news_image_04.jpg" alt="AI-Powered Tracking System Launched">
+                    <div class="news-content">
+                        <h3>AI-Powered Tracking System Launched</h3>
+                        <p>By Admin | Comments: 18</p>
+                        <p>Our new tracking system uses AI to provide real-time, predictive insights. Here's how it helps customers...</p>
+                        <span class="news-date">15 May</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="indicators">
+                <span class="news-dot active"></span>
+                <span class="news-dot"></span>
+                <span class="news-dot"></span>
+                <span class="news-dot"></span>
+            </div>
+        </div>
+    </section>
+      
+
+    <footer>
+        <div class="footer-top">
+            <div>
+                <h3>Weekly Newsletter</h3>
+                <p>There are many variations of passages of lorem ipsum available.</p>
+            </div>
+            <div class="newsletter">
+                <input type="email" placeholder="Enter Your Mail" />
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+    
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>We are a global company providing top-notch logistics and supply chain services.</p>
+            <p>📞 (+94) 11 434 7575</p>
+            <p>📍 42 Lily Ave, Colombo 00600</p>
+          </div>
+    
+          <div class="footer-section">
+            <h3>Latest News</h3>
+            <p>› Launching our new logistics tracking system for better visibility.</p>
+            <p>5 Minutes Ago</p>
+            <p>› Celebrating 10 years of excellence in customer service.</p>
+            <p>5 Minutes Ago</p>
+          </div>
+    
+          <div class="footer-section">
+            <h3>Customer Service</h3>
+            <ul>
+              <li>Support Forums</li>
+              <li>Communication</li>
+              <li>FAQs</li>
+              <li>Privacy Policy</li>
+              <li>Rules & Conditions</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+    
+          <div class="footer-section">
+            <h3>Customer Service</h3>
+            <div class="image-grid">
+              <img src="images/service 04.jpeg" alt="Team" />
+              <img src="images/news_image_03 .jpg" alt="Go Green" />
+              <img src="images/news_image_02.jpg" alt="New Technology" />
+              <img src="images/Service 02.jpeg" alt="Fleet" />
+              <img src="images/service 01.jpeg" alt="Delivery" />
+              <img src="images/news_image_04.jpg" alt="AI-Powered" />
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <p>Copyright © 2021 All Rights Reserved. Site By Xineb®</p>
+          <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-vimeo-v"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-behance"></i>
+            <i class="fas fa-cog"></i>
+          </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+</html>
