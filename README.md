@@ -37,7 +37,7 @@ project-root/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/cargo-ton-homepage.git
+   git clone https://github.com/shafrin0721/xiteb/cargo-ton-homepage.git
    cd cargo-ton-homepage
 Open index.html in your browser:
 
